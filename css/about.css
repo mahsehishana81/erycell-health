@@ -1,0 +1,122 @@
+/* ABOUT */
+
+.about{
+position:relative;
+overflow:hidden;
+
+padding:100px 30px;
+
+border-radius:30px;
+
+background:
+linear-gradient(135deg,#041426,#062544,#0b4a6f);
+
+color:#fff;
+text-align:center;
+
+isolation:isolate;
+}
+
+/* GLOW SHAPES */
+
+.about::before,
+.about::after{
+content:"";
+position:absolute;
+border-radius:50%;
+filter:blur(80px);
+opacity:.25;
+pointer-events:none;
+z-index:-1;
+}
+
+/* TOP SHAPE */
+
+.about::before{
+top:-120px;
+left:-100px;
+
+width:320px;
+height:320px;
+
+background:#38bdf8;
+}
+
+/* BOTTOM SHAPE */
+
+.about::after{
+right:-100px;
+bottom:-120px;
+
+width:280px;
+height:280px;
+
+background:#22c55e;
+}
+
+/* EXTRA SHAPE */
+
+.about .about-shape{
+position:absolute;
+
+top:40%;
+left:50%;
+
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+background:#0ea5e9;
+
+filter:blur(90px);
+
+opacity:.18;
+
+transform:translate(-50%,-50%);
+
+pointer-events:none;
+
+z-index:-1;
+}
+
+/* TITLE */
+
+.about h2{
+margin-bottom:25px;
+font-size:56px;
+}
+
+/* TEXT */
+
+.about p{
+max-width:900px;
+margin:auto;
+
+font-size:20px;
+line-height:1.9;
+
+color:#e5e7eb;
+}
+/* CONTACT */
+
+.contact{
+background:linear-gradient(135deg,#0b4a6f,#0284c7);
+color:white;
+padding:100px 20px;
+text-align:center;
+border-radius:30px;
+}
+
+.contact h2{
+font-size:54px;
+margin-bottom:20px;
+}
+
+.contact p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+margin-bottom:40px;
+}
